@@ -1,0 +1,74 @@
+<div class="nav-side-menu">
+    <div class="brand">
+		<div class="row"> 
+			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+				<div class="user-profile-image">
+					<img src="image/user-default-icon.png" alt="">
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+				<div class="sidenav-profile-txt">
+					<div>
+						<span>Welcome</span>
+					</div>
+					<div>
+						<span>User Name </span>
+					</div>
+					<br/>
+					<div class="pull-right">
+						<button type="submit" class="btn btn-primary editprofile-btn">Edit Profile</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a ng-class="getClass('/home')"  href="#/home">
+                  <i class="fa fa-home fa-lg"></i> Home
+                  </a>
+                </li>
+                <li  data-toggle="collapse" data-target="#masterdata" class="collapsed active">
+                  <a href="javascript:void(0);"><i class="fa fa-database  fa-lg"></i> Master Data <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="masterdata">
+                    <li><a href="#">Organisation Profile</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Taxes</a></li>
+                    <li><a href="#">Registered Contact</a></li>
+                    <li><a href="#">Supplying</a></li>
+                    <li><a href="#">Purchasing</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="javascript:void(0);"><i class="fa fa-list-alt fa-lg"></i> Products <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li><a href="#">Add Product</a></li>
+                  <li><a href="#">View Added</a></li>
+                </ul>
+				<li>
+				  <a href="javascript:void(0);">
+					<i class="fa fa-mobile fa-lg"></i> Verify Mobile  
+					<label class="checkbox-inline checkbox-adjs">
+					  <input type="checkbox"  value="option1"> 
+					</label>
+				  </a>
+				</li>
+				<li>
+				  <a href="javascript:void(0);">
+					<i class="fa fa-envelope fa-lg"></i> Verify Email
+					<label class="checkbox-inline checkbox-adjs">
+					  <input type="checkbox"  value="option2"> 
+					</label>
+				  </a>
+				</li>
+                <li>
+                  <a href="javascript:void(0);">
+					<i class="fa fa-sign-out fa-lg"></i> Logout
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>

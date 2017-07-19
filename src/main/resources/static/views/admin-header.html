@@ -1,0 +1,117 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#admin-header" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+		<div class="brand-logo2">  
+			<a href="#/home">
+				<img src="image/pharmerz-logo1.png" alt=""> 
+				<span class="logo-txt-adjs hidden-xs hidden-sm custom-hidden-md">Pharmerz</span>
+			</a>
+		</div>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="admin-header">
+      <form class="admin-navbar-form">
+        <div class="col-md-5 col-md-offset-3">
+            <div id="admin-searchbox"> 
+                <div class="input-group stylish-input-group">
+                    <input type="text" class="form-control"  placeholder="Search Enquiry / Quatation / Purchase Order / Invoices" >
+                    <span class="input-group-addon">
+                        <button type="submit">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>  
+                    </span>
+                </div>
+            </div>
+        </div>
+      </form>
+	  <div class="navbar-right admin-rightnavbar-adjs">
+		<span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-bell" aria-hidden="true"></span>
+		<span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+	  </div>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="nav-side-menu">
+    <div class="brand">
+		<div class="row"> 
+			<div class="col-xs-4 col-sm-4 col-md-3 col-lg-3">
+				<div class="user-profile-image">
+					<img src="image/user-default-icon.png" alt="">
+				</div>
+			</div>
+			<div class="col-xs-8 col-sm-8 col-md-9 col-lg-9">
+				<div class="sidenav-profile-txt">
+					<div>
+						<span>Welcome</span>
+					</div>
+					<div>
+						<span>User Name </span>
+					</div>
+					<br/>
+					<div class="pull-right">
+						<button type="submit" class="btn btn-primary editprofile-btn">Edit Profile</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+        <div class="menu-list">
+            <ul id="menu-content" class="menu-content collapse out">
+                <li>
+                  <a ng-class="getClass('/home')"  href="#/home">
+                  <i class="fa fa-home fa-lg"></i> Home
+                  </a>
+                </li>
+                <li  data-toggle="collapse" data-target="#masterdata" class="collapsed active">
+                  <a href="javascript:void(0);"><i class="fa fa-database  fa-lg"></i> Master Data <span class="arrow"></span></a>
+                </li>
+                <ul class="sub-menu collapse" id="masterdata">
+                    <li><a href="#">Organisation Profile</a></li>
+                    <li><a href="#">Location</a></li>
+                    <li><a href="#">Taxes</a></li>
+                    <li><a href="#">Registered Contact</a></li>
+                    <li><a href="#">Supplying</a></li>
+                    <li><a href="#">Purchasing</a></li>
+                </ul>
+                <li data-toggle="collapse" data-target="#service" class="collapsed">
+                  <a href="javascript:void(0);"><i class="fa fa-list-alt fa-lg"></i> Products <span class="arrow"></span></a>
+                </li>  
+                <ul class="sub-menu collapse" id="service">
+                  <li><a href="#">Add Product</a></li>
+                  <li><a href="#">View Added</a></li>
+                </ul>
+				<li>
+				  <a href="javascript:void(0);">
+					<i class="fa fa-mobile fa-lg"></i> Verify Mobile  
+					<label class="checkbox-inline checkbox-adjs">
+					  <input type="checkbox"  value="option1"> 
+					</label>
+				  </a>
+				</li>
+				<li>
+				  <a href="javascript:void(0);">
+					<i class="fa fa-envelope fa-lg"></i> Verify Email
+					<label class="checkbox-inline checkbox-adjs">
+					  <input type="checkbox"  value="option2"> 
+					</label>
+				  </a>
+				</li>
+                <li>
+                  <a href="javascript:void(0);">
+					<i class="fa fa-sign-out fa-lg"></i> Logout
+                  </a>
+                </li>
+            </ul>
+     </div>
+</div>

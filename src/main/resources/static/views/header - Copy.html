@@ -1,0 +1,416 @@
+
+
+<!--header bar start-->
+<div class="headerbar-background">
+    <div class="container-fluid"> 
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-ms-6 col-lg-6">
+                <div class="playstore-box-header">
+                    <span>Download App from</span> &nbsp; <a href="https://play.google.com/store/apps/details?id=com.pharmerz.pharmerz&hl=en" target="_blank"><img src="image/android-playstore-icon.png" alt=""></a> <a href="https://itunes.apple.com/gb/app/pharmerz/id1064115252?mt=8" target="_blank"><img src="image/apple-playstore-icon.png" alt=""></a>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-ms-6 col-lg-6">
+                <div class="login-signup-box-header">
+                    <a href="#" data-toggle="modal" data-target="#SignupModal"><span class="signup-adjs">Signup</span></a>   <img src="image/headbar-divider.png" alt=""> <a href="#" data-toggle="modal" data-target="#LoginModal"><span class="login-adjs">Login</span></a>
+                </div>
+                <!-- logout
+                <div class="login-signup-box-header">
+                    <a href="#"><span>user name</span></a> <img src="image/headbar-divider.png" alt=""><a href="#" ng-click="logout();"><span>Logot</span></a>
+                </div>
+                -->
+            </div>
+        </div>
+    </div>
+</div>
+<!--header bar end--> 
+<!--nav bar start-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" >
+                <a href="#/categories">
+                    <span class="sr-only">Categories</span>
+                    <span class="glyphicon glyphicon-th blue-glyphicon" aria-hidden="true"></span>
+                </a>
+            </button>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="glyphicon glyphicon-menu-hamburger blue-glyphicon" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="navbar-toggle" data-toggle="modal" data-target="#searchbox-toggle" aria-expanded="false">
+                <span class="sr-only">Toggle Search Modal</span>
+                <span class="glyphicon glyphicon-search blue-glyphicon" aria-hidden="true"></span>
+            </button>
+
+            <div class="brand-logo">  
+                <a href="#/home">
+                    <img src="image/pharmerz-logo.png" alt=""> <span class="hidden-xs hidden-sm custom-hidden-md">Pharmerz</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-txt">
+                <li><a ng-class="getClass('/home')" href="#/home">HOME</a></li>
+                <li><a ng-class="getClass('/product')" href="#/product">PRODUCT</a></li>
+                <li><a ng-class="getClass('/aboutus')" href="#/aboutus">ABOUT US</a></li>
+                <li><a ng-class="getClass('/contactus')" href="#/contactus">CONTACT US</a></li>
+                <li class="hidden-xs hidden-sm hidden-md hidden-lg"><a href="#/categories">CATEGORIES</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right ">
+                <li class="dropdown hidden-xs hidden-sm custom-hidden-md">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> <span class="glyphicon glyphicon-th blue-glyphicon" aria-hidden="true"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Active Pharmaceutical Ingradients (API)</a></li>
+                        <li><a href="#">Fine Chemical</a></li>
+                        <li><a href="#">Intermediats Exceptiens</a></li>
+                        <li><a href="#">Pellets</a></li>
+                        <li><a href="#">Plant Machinary</a></li>
+                        <li><a href="#">Lab Equipments</a></li>
+                        <li><a href="#">Regulatory</a></li>
+                        <li><a href="#">Finished Formulation</a></li>
+                        <li><a href="#">Packaging</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Herbals</a></li>
+                        <li><a href="#">Wholesale Dealers</a></li>
+                        <li><a href="#">Veternary</a></li>
+                        <li><a href="#">Brand</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-right hidden-xs hidden-sm custom-hidden-md">
+                <div class="form-group borderless-searchbox">
+                    <div class="input-group searchbox">
+                        <input type="text" class="form-control " placeholder="Composition/Supplier">
+                        <span class="input-group-addon">
+                            <button type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>  
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+<!--nav bar end--> 
+
+
+
+<!--Login Modal-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="modals-container">
+            <!-- Modal -->
+            <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                                    <div class="login-heading">
+                                        <span>
+                                            <u>Login</u>
+                                        </span>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <form class="form-horizontal" name="login">
+                                        <div class="login-form-inneradjs">
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <input type="email" ng-class="{errorborder:submitted && login.loginUsername.$invalid}" class="form-control" name="loginUsername" placeholder="Username"  ng-model="params.username" required>
+                                                    <!-- validation error -->
+                                                    <span class="validation_error" ng-show="submitted && login.loginUsername.$error.required">{{errorMessage.required}}</span>
+                                                    <span class="validation_error" ng-show="submitted && login.loginUsername.$error.pattern">{{errorMessage.email}}</span>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <!-- show password as type="password" -->
+                                                    <div ng-if="!showPassword">
+                                                        <input type="password"  ng-class="{errorborder:submitted && login.password1.$invalid}" ng-model="params.password" class="form-control" name="password1" placeholder="Password"  required>
+                                                        <span ng-if="params.password" ng-click="toggleShowPassword();" class="glyphicon glyphicon-eye-open form-control-feedback " style="cursor: pointer; pointer-events: all;"></span>
+                                                    </div>
+                                                    <!-- show password as type="text" -->
+                                                    <div ng-if="showPassword">
+                                                        <input type="text"  ng-class="{errorborder:submitted && login.password1.$invalid}" ng-model="params.password" class="form-control" name="password1" placeholder="Password"   required>
+                                                        <span ng-if="params.password" ng-click="toggleShowPassword();" class="glyphicon glyphicon-eye-close form-control-feedback" style="cursor: pointer; pointer-events: all;"></span>
+                                                    </div>
+                                                    <!-- validation error -->
+                                                    <span class="validation_error" ng-show="submitted && login.password1.$error.required">{{errorMessage.required}}</span>
+                                                    <span class="validation_error" ng-show="submitted && checkpassword && login.password1.$valid">{{errorMessage.password}}</span>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="form-group">
+                                                <center><button type="button"  ng-click="loginForm(login,params)" class="btn btn-primary myloginbtn">Login</button></center>
+                                            </div>
+                                        </div>
+                                    </form>
+                                    <br/>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="login-link">
+                                                <a href="#">Signup or Register</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                            <div class="login-link">
+                                                <a href="#">Forgot Password</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <!-- Modal -->
+            <div class="modal fade" id="SignupModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                                    <div class="signup-heading">
+                                        <span>
+                                            <u>Registration Form</u>
+                                        </span>
+                                    </div>
+                                    <br/>
+                                    <div class="signup-subheading">
+                                        <span>
+                                            &#8226; User Information &#8226;
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="row">
+                                <div class="col-xs-12 col-ms-12 col-md-12 col-lg-12">
+                                    <div class="signup-form-inneradjs">
+                                        <form class="form-horizontal">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+                                                    <div class="profile-image-box">
+                                                        <img src="image/user-default-icon.png" alt="">
+                                                        <br/>
+                                                        <span class="btn profile-image-box-btn btn-file">
+                                                            Browse Photo <input type="file" />
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="text" class="form-control" name="firstname" placeholder="First Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <div class="form-group">
+                                                                <div class="col-md-10">
+                                                                    <input type="text" class="form-control" name="middlename" placeholder="Middle Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row signup-row-adjs">
+                                                        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                                            <div class="form-group lastname-adjs">
+                                                                <div class="col-md-12">
+                                                                    <input type="text" class="form-control" name="lastname" placeholder="Last Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <label class="control-label">
+                                                                Gender
+                                                            </label>
+                                                            <div>
+                                                                <label class="radio-inline blue-radio">
+                                                                    <input type="radio" name="inlineRadioOptions" value="male"> Male
+                                                                </label>
+                                                                <label class="radio-inline blue-radio">
+                                                                    <input type="radio" name="inlineRadioOptions" value="female"> Female
+                                                                </label>
+                                                                <label class="radio-inline blue-radio">
+                                                                    <input type="radio" name="inlineRadioOptions" value="other"> Other
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="text" class="form-control" name="companyname" placeholder="Company Name">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                                                            <div class="form-group">
+                                                                <div class="col-xs-6 col-sm-4 col-md-12">
+                                                                    <select class="form-control">
+                                                                        <option>+91</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>	
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="text" class="form-control" name="contactnumber" placeholder="Contact Number">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>	
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <input type="text" class="form-control" name="emailid" placeholder="Email ID">
+                                                        </div>
+                                                    </div>	
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <input type="text" class="form-control" name="username" placeholder="Username">
+                                                            <span class="signup-link">Check Availability</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="row">
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="password" class="form-control" name="password" placeholder="Password">
+                                                                    <span class="signup-link">Show</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                            <div class="form-group">
+                                                                <div class="col-md-12">
+                                                                    <input type="password" class="form-control" name="password" placeholder="Re-type Password">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="checkbox checkbox-txt right-checkbox-algin">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            Email me a weekly newsletter
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                    <div class="checkbox checkbox-txt">
+                                                        <label>
+                                                            <input type="checkbox" value="">
+                                                            Email me a daily newsletter
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <div class="signup-footer-txt">
+                                                        <span>By Clicking Register, you agree to our <a href="#">Terms of sales</a> that you have read our <a href="#">Privacy Policy.</a></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <br/>
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                                    <center> 
+                                                        <button type="button" class="btn btn-primary mysignupbtn">Register</button>
+                                                        <button type="button" class="btn btn-primary mysignupbtn">Cancel</button>
+                                                    </center>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>		  
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="search-container">
+            <div class="modal fade" id="searchbox-toggle" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="searchboxToggle">
+                                <form class="" role="search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search">
+                                        <span class="input-group-btn">
+                                            <button type="reset" class="btn btn-default" data-dismiss="modal" aria-label="Close">
+                                                <span class="glyphicon glyphicon-remove myclose-btn">
+                                                    <span class="sr-only">Close</span>
+                                                </span>
+                                            </button>
+                                            <button type="submit" class="btn btn-default">
+                                                <span class="glyphicon glyphicon-search mysearch-btn">
+                                                    <span class="sr-only">Search</span>
+                                                </span>
+                                            </button>
+                                        </span>     
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

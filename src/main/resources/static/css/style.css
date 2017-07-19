@@ -1,0 +1,1193 @@
+/*-------------------------
+Date : 16 nov 2016
+Description : Website css 
+---------------------------*/
+
+
+/*-----------------------
+External Fonts Added
+-----------------------*/
+/*
+@font-face {
+    font-family: "RalewayMedium";
+    src: url('../fonts/raleway-medium.eot'); 
+    src:url('../fonts/raleway-medium.ttf'),   
+        url('../fonts/raleway-medium.woff'),
+        url('../fonts/raleway-medium.svg'),
+        url('../fonts/Raleway-Medium-Original.otf');    
+}
+
+@font-face {
+    font-family: "RalewaySemiBold";
+    src: url('../fonts/raleway-semibold.eot'); 
+    src:url('../fonts/Raleway-SemiBold.ttf'),   
+        url('../fonts/Raleway-SemiBold.otf');
+}
+
+@font-face {
+    font-family: "RalewayRegular";
+    src: url('../fonts/raleway-regular-webfont.eot'); 
+    src:url('../fonts/Raleway-Regular.ttf'),
+        url('../fonts/Raleway-Regular.woff'),  
+        url('../fonts/Raleway-Regular.otf');
+}*/
+
+@font-face {
+    font-family: 'JosefinSansLight';
+    src: url('../fonts/JosefinSans-Light.eot');    
+    src: url('../fonts/JosefinSans-Light.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Light.otf') format('opentype'),
+        url('../fonts/JosefinSans-Light.woff') format('woff'),
+        url('../fonts/JosefinSans-Light.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Light.svg#fredokaone') format('svg');
+}
+
+
+@font-face {
+    font-family: 'JosefinSans';
+    src: url('../fonts/JosefinSans.eot');
+    src: url('../fonts/JosefinSans.ttf') format('truetype'),
+        url('../fonts/JosefinSans.otf') format('opentype'),
+        url('../fonts/JosefinSans.woff') format('woff'),
+        url('../fonts/JosefinSans.woff2') format('woff2'),
+        url('../fonts/JosefinSans.svg#fredokaone') format('svg');
+}
+
+@font-face {
+    font-family: 'JosefinSansBold';
+    src: url('../fonts/JosefinSans-Bold.eot');
+    src: url('../fonts/JosefinSans-Bold.ttf') format('truetype'),
+        url('../fonts/JosefinSans-Bold.otf') format('opentype'),
+        url('../fonts/JosefinSans-Bold.woff') format('woff'),
+        url('../fonts/JosefinSans-Bold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-Bold.svg#fredokaone') format('svg');
+}
+
+
+@font-face {
+    font-family: 'JosefinSansSemiBold';
+    src: url('../fonts/JosefinSans-SemiBold.eot');
+    src: url('../fonts/JosefinSans-SemiBold.ttf') format('truetype'),
+        url('../fonts/JosefinSans-SemiBold.otf') format('opentype'),
+        url('../fonts/JosefinSans-SemiBold.woff') format('woff'),
+        url('../fonts/JosefinSans-SemiBold.woff2') format('woff2'),
+        url('../fonts/JosefinSans-SemiBold.svg#fredokaone') format('svg');
+}
+
+@font-face {
+    font-family: 'RalewaySemiBold';
+    src: url('../fonts/Raleway SemiBold.eot');
+    src: url('../fonts/Raleway SemiBold.ttf') format('truetype'),
+        url('../fonts/Raleway SemiBold.otf') format('opentype'),
+        url('../fonts/Raleway SemiBold.woff') format('woff'),
+        url('../fonts/Raleway SemiBold.woff2') format('woff2'),
+        url('../fonts/Raleway SemiBold.svg#fredokaone') format('svg');
+}
+
+body{
+    font-family: JosefinSansSemiBold;
+}
+
+/*--------------------------*/
+
+/*-----------------
+Header Part css
+-------------------*/
+.headerbar-background{
+    background-color: #17222d;
+    padding: 1%;
+}
+
+.playstore-box-header{
+    font-family: JosefinSans;
+    font-size: 16px;
+    color:#fff;
+}
+
+.playstore-box-header img{
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25px;
+    height: 19px;
+}
+
+.login-signup-box-header{
+    font-family: JosefinSans;
+    font-size: 16px;
+    color:#fff;
+    float: right;
+}
+
+.login-signup-box-header a{
+    text-decoration: none !important;
+    color:#fff !important;
+}
+
+.signup-adjs{
+    padding-right: 5px;
+}
+
+.login-adjs{
+    padding-left: 5px;
+}
+
+.blue-glyphicon{
+    color: #3498db;
+    font-size: 20px;
+}
+
+/*-------------- End ----------------*/
+/*-------------------------------
+Footer part css
+-------------------------------*/
+.footer-background{
+    background:  url('../image/footer-background.png') no-repeat center center;
+    width: 100%;
+    height: 125px;
+    background-size: cover;
+}
+.social-icons{
+    text-align:center;
+    padding-top:30px;
+}
+
+.social-icons-txt{
+    font-family: JosefinSans;
+    font-size: 20px;
+    color:#fff;
+}
+
+.social-icons img{
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:5px;
+    cursor: pointer;
+}
+
+.footer-links{
+    padding-top:30px;
+}
+
+.footer-links a{
+    font-family: JosefinSans;
+    font-size: 16px;
+    color:#fff;
+    text-decoration:none;
+}
+
+.movetotop{
+    float:right;
+}	
+
+.copyright-box-background{
+    background-color:#0c1d28;
+}
+
+.copyright{
+    font-family: JosefinSans;
+    font-size: 15px;
+    color:#fff;
+    text-align:center;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+/*-------------- End ----------------*/
+
+/*------------------------------
+Login Modal css
+-------------------------------*/
+#modals-container .modal{
+    top: 20% !important;
+    padding: 0!important;
+}
+
+#LoginModal .modal-header {
+    border-bottom: none !important; 
+}
+
+#LoginModal .form-control{
+    background-color: #eeeeee;
+}
+
+.login-form-inneradjs{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.login-heading{
+    font-family:JosefinSans;
+    font-size:20px;
+    text-align:center;
+    font-weight: 600;
+}
+
+.rightborder-adjs{
+    border-right: none !important;
+}
+
+.login-link{
+    font-family:JosefinSans;
+    text-align:center;
+    font-weight: 600;
+}
+
+.login-link a{
+    color:#02abec;
+    text-decoration: underline;
+}
+
+.myloginbtn{
+    padding: 6px 43px !important;
+    background-color: #34495e;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+
+#LoginModal  .form-control-feedback{
+    right: 14px !important;
+}
+
+.validation_error{
+    font-family:JosefinSans;
+    font-size:12px;
+    color:red;
+}
+.errorborder{
+    border:1px solid red;
+}
+
+/*-------------- End ----------------*/
+
+/*------------------------------
+Signup Modal css
+-------------------------------*/
+
+#SignupModal .modal-header {
+    border-bottom: none !important; 
+}
+.signup-heading{
+    font-family:JosefinSansSemiBold;
+    font-size:20px;
+    text-align:center;
+    font-weight: 600;
+}
+
+.signup-form-inneradjs{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.signup-subheading{
+    font-family:JosefinSans;
+    font-size:20px;
+    text-align:center;
+    font-weight: 600;
+}
+
+.profile-image-box{
+    text-align:center;
+}
+
+.profile-image-box img{
+    width :80px;
+    height:80px;
+    padding-bottom : 5px;
+}
+
+.profile-image-box-btn{
+    color:#02abec;
+    background-color: #fff; 
+    border-color: #02abec; 
+}
+
+.profile-image-box-btn:hover{
+    color:#02abec;
+}
+
+#SignupModal .form-control{
+    background-color: #eeeeee;
+}
+.btn-file {
+    position: relative;
+    overflow: hidden;
+}
+.btn-file input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+.lastname-adjs{
+    padding-top: 20px;
+}
+
+.signup-row-adjs{
+    padding-bottom:10px;
+}
+
+/* not used */
+#SignupModal{
+
+}
+
+.radio-info input[type="radio"] + label::after {
+    background-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::before {
+    border-color: #5bc0de; }
+.radio-info input[type="radio"]:checked + label::after {
+    background-color: #5bc0de; }
+/* not used */
+
+
+.signup-link{
+    font-family:JosefinSans;
+    color:#02abec;
+    font-size:13px;
+    float:right;
+}
+.checkbox-txt{
+    font-family:JosefinSans;
+}
+
+.right-checkbox-algin{
+    float: right;   
+}
+
+/* not used */
+.radio-inline input[type="radio"]:checked + label::before {
+    border-color: #5bc0de; 
+}
+
+.radio-inline input[type="radio"]:checked + label::after {
+    background-color: #5bc0de;
+}
+/* not used */
+
+.signup-footer-txt{
+    padding-top: 5px;
+    font-family:JosefinSans;
+    text-align: center;
+}
+
+.signup-footer-txt a{
+    color:#02abec;
+    text-decoration: underline;
+}
+.mysignupbtn{
+    padding: 6px 43px !important;
+    background-color: #34495e;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+/*-------------- End ----------------*/
+
+
+
+/*------------------------------
+Navbar css
+-------------------------------*/
+.brand-logo{
+    font-family: RalewaySemiBold;
+    font-size: 22px;
+    color: #0099cc;
+    padding-top: 9px;
+}
+
+.brand-logo a{
+    text-decoration: none !important;
+    color: #0099cc !important;
+}
+
+.brand-logo a:hover{
+    color: #0099cc !important;  
+}
+
+.navbar {
+    border-radius: 0px !important;
+    border: 0px solid transparent !important;
+}
+.navbar-default{
+    background-color: #fff !important;
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(205,205,205,1) !important;
+    -moz-box-shadow: 0px 2px 5px 0px rgba(205,205,205,1) !important;
+    box-shadow: 0px 2px 5px 0px rgba(205,205,205,1) !important;
+}
+.navbar-txt{
+    padding-left: 50px;
+}
+.navbar-txt>li>a{
+    font-family: JosefinSansSemiBold !important;
+    font-size: 18px !important;
+    color: #000 !important;
+}
+.navbar-txt>li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* 
+    .navbar-txt>li>a:focus , .navbar-txt>li>a:hover{
+    border-bottom: 2px solid #02abec;
+    padding-bottom:2px;
+}
+
+*/
+
+.activenav{
+    border-bottom: 2px solid #02abec;
+    padding-bottom: 2px !important;
+}
+
+.borderless-searchbox .form-control{
+    border-radius: 0px !important; 
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+    border-bottom: 1px solid #ddd !important;
+    -webkit-box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important; 
+    box-shadow: inset 0 0px 0px rgba(0,0,0,.075) !important; 
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; 
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; 
+}
+/* not used */
+/*
+.searchbox{
+    background: url('../image/search-icon.png') right no-repeat;
+    padding-right: 23px;
+    background-size: 22px;
+}
+*/
+/* not used */
+
+.searchbox .input-group-addon {
+    background: white !important;
+    border: 0px solid #ccc !important; 
+    padding: 0px 0px !important;
+    font-size: 18px;
+}
+
+.searchbox button {
+    border: 0;
+    background: transparent;
+    color:#02abec;
+}
+
+.navbar-right .dropdown-menu{
+    background-color:#17222d !important;
+    color:#fff !important;
+}
+
+.navbar-right .dropdown-menu:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 21px solid #1d2c4a;
+    top: -18px;
+    right: 6px;
+}
+
+.navbar-right .dropdown-menu>li>a {
+    color: #fff !important;
+    font-family: JosefinSans !important;
+    font-size: 16px;
+}
+
+.navbar-right .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    color: #02b5f1 !important;
+    text-decoration: none;
+    background-color: transparent !important;
+}
+
+.navbar{
+    margin-bottom: 0px !important; 
+}  
+
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+    background-color: transparent !important; 
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent !important; 
+}
+
+.searchboxToggle form[role="search"] {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    z-index: 0;
+}
+
+
+.searchboxToggle form[role="search"] .btn {
+    padding: 6.5px 13px !important;
+}
+
+#search-container .modal-body {
+    padding: 0px !important;
+}
+
+#search-container .modal {
+    top: 100px;
+}
+
+#search-container .form-control {
+    border-radius: 0px !important; 
+}
+
+#search-container .btn-default {
+    color: red;
+    border-left: 0;
+    border-radius: 0px !important; 
+}
+
+#search-container .btn-default:hover {
+    color: red;
+    background-color: #fff;
+
+}
+
+.myclose-btn{
+    border: 1px solid red;
+    border-radius: 50%;
+}
+
+.mysearch-btn{
+    color: #000; 
+}
+
+/*-------------- End ----------------*/
+
+/*-----------------------------
+    Home Page css
+------------------------------*/
+.slider-box{
+    background-color:#d7d7d7;
+}
+
+.slider-box-txt{
+    text-align: center;
+    font-family: JosefinSans;
+    font-size: 24px;
+    padding: 15%;
+    color:#7c7c7c;
+}
+
+.counting-box{
+    /*    background-color: #ebebeb;*/
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.countigbox-txt{
+    text-align: center;
+}
+
+.countigbox-count-txt{
+    font-size:30px;
+    font-family: JosefinSans;
+    font-weight: 600;
+}
+
+.countigbox-name-txt{
+    font-family: JosefinSans;
+    font-size:18px;
+}
+
+.joinus-path-image{
+    background: url('../image/jointhepath_redesign1.png') no-repeat center center;
+    width:100%;
+    height: 350px;
+    background-size:contain; 
+}
+
+.video-box{
+    /*background-color:#ebebeb;*/
+}
+
+.video-container {
+    position:relative;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+}
+
+.ekko-lightbox .modal-header {
+    border-bottom: none !important; 
+}
+
+.ekko-lightbox.modal {
+    padding: 0!important;
+    top:10%;
+}
+
+.video-container img{
+    width:100%;
+}
+
+.video-container iframe, .video-container object, .video-container embed {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+}
+
+.video-box-inner-background{
+    /*background-color:#d7d7d7; */
+}
+
+.video-hide
+{
+    display: none;
+}
+
+.video-box-header{
+    text-align: center; 
+    padding-top: 45px;
+    padding-bottom: 25px;
+}
+
+.video-box-header-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+}
+
+.video-box-txt{
+    text-align: center;
+    font-family: JosefinSansSemiBold;
+    font-size: 22px;
+    padding: 15%;
+    color:#7c7c7c;
+}
+
+.what-is-Pharmerz{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.what-is-Pharmerz-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+}
+
+.pharmerz-intro-txt{
+    font-family: JosefinSans;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gery-box{
+    background-color: #ebebeb;
+}
+.who-can-join-pharmerz-txt{
+    text-align: center;
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.light-skybule-box{
+    background-color: #ecf0f1;
+}
+.wcj-pharmerz-image{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.wcj-pharmerz-heading{
+    font-family: JosefinSansSemiBold;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.how-Pharmerz-work{
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+
+.how-Pharmerz-work-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+}
+
+.how-Pharmerz-work-subtxt {
+    font-family: JosefinSans;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/*--not use--*/
+/*.wcj-pharmerz-content{
+    font-family: RalewayMedium;
+    font-size: 15px;
+    color: #7f8c8d;
+}*/
+/*--not use--*/
+
+.viewall-btn{
+    background-color:#3498db;
+    border-color: #2e6da4;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+.sub-nav-adjs{
+    padding-top: 45px;
+}
+
+
+.nav-pills-stacked-example li a{
+    font-size: 20px;
+    margin-left: 10px;
+    color:#000;
+}
+
+.nav-pills-stacked-example li.active a:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-top: 9px solid #337ab7;
+    top: 48px;
+    right: 15px;
+    z-index: 99;
+}
+
+.home-contact{
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 45px;
+    padding-bottom: 20px;
+}
+
+.home-contact-subheading{
+    font-family: JosefinSans;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.home-contactus-address{
+    font-family: JosefinSansSemiBold;
+    font-size: 16px;
+    color: #3498db;
+}
+
+
+#home-contact-form .form-control{
+    border-radius: 0px;
+}
+
+.required-filed:after { 
+    position: absolute;
+    content: '*';
+    color: red;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+}
+
+.mail-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 16px; 
+    color:#3498db;
+}
+
+.phone-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 16px;  
+    color:#3498db;
+}
+
+.phone-txt-adjs{
+    padding-top: 10px;
+}
+
+.mail-txt-adjs{
+    padding-top: 10px;
+}
+
+.contact-btn{
+    background-color:#3498db;
+    border-color: #2e6da4;
+    color: #fff;
+    border-radius: 15px;
+    font-size: 16px;
+}
+
+
+.stickyfooter {
+    background-color: #499bea;
+    position: fixed;
+    bottom: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px 0 4px;
+    text-align: center;
+    margin-right: 0;
+    height: 45px;
+    left: 0;
+    z-index: 50;
+    width:100%;
+    color:#fff;
+    font-family: JosefinSansSemiBold;
+    font-size: 16px;  
+}
+
+
+.stickyfooter a{
+    color:#fff;
+    text-decoration: none;
+}
+
+.owl-item {
+    width:320px !important;
+}
+
+/*-------------- End ----------------*/
+
+/*-----------------------------
+Product Page
+--------------------------------*/
+
+.productpage-background
+{
+    background-color: #ebebeb;
+}
+
+.product-page-items-background{
+    background-color: #fff;
+}
+
+.p-product-item-box{
+    padding-top:15px;
+    padding-bottom:15px;
+}
+
+.p-product-image{
+    padding-top:3px;
+    text-align:center;
+}
+
+.p-product-name{
+    font-family: JosefinSansSemiBold;
+    color:#212121;
+    font-size: 18px;
+}
+
+.p-product-categorty{
+    font-family: JosefinSans;
+    color:#212121;
+    font-size: 15px;
+    font-weight: 600;
+}
+/*--no use--*/
+/*
+.p-product-supplier{
+    font-family: JosefinSans;
+    color:#212121;
+    font-size: 15px;
+}
+*/
+/*--no use--*/
+
+.p-product-txt-content{
+    padding-bottom:5px;
+}
+
+.p-product-sendEnq-btn{
+    background-color:#3d5968;
+    border-color: #2e6da4;
+    color: #fff;
+}
+
+.btn-gery{
+    background-color: #ccc;
+}
+
+#filter-box .dropdown-menu:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: -13px;
+    left: 7px;
+}
+
+.dropdown-size{
+    width:300px;
+}
+
+.filetr-collapsable {
+    display: block; 
+    margin-top: 13px;	
+}
+
+.filter-box {
+    /*padding: 16px;*/
+    /*border-bottom: 1px solid #f0f0f0;*/
+}
+
+.filter-headername {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #dfdfdf;
+    margin-top: 5px;
+}
+
+.filter-headername-txt {
+    font-family:JosefinSans;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    display: inline-block;
+    color:#888888;
+    padding-top:5px;
+    padding-left:5px;
+    padding-bottom:5px;
+}
+
+.arrow-adjs{
+    padding-right: 5px;
+}
+
+.filter-innerlist-block  {
+    display: inline-block;
+    width: 100%;
+}
+
+.filter-innerlist-block  .lable {
+    display: inline-block;
+    max-width:250px;
+    padding-left:10px;
+    font-weight: 600;
+}
+
+.filter-innerlist-block   .checkbox input[type=checkbox] {
+    position: absolute;
+    top: 0 !important;
+    right: 16px !important;
+}
+
+
+.filter-group-items{
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.filter-group-items.hideMe{
+    height: 0px;
+}
+/* not used */
+/*  
+//scroll bar
+.filter-group-items::-webkit-scrollbar {
+    width: 8px;
+}
+
+.filter-group-items::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+}
+
+.filter-group-items::-webkit-scrollbar-thumb {
+  background-color: #cacaca;
+  outline: 1px solid #cacaca;
+}
+*/
+/* not used */
+
+
+/*-------------- End ----------------*/
+
+/*-------------------------------------
+Categories page css
+--------------------------------------*/
+.categories-container{
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.categories-image{
+    text-align: center; 
+    padding-top: 11%;
+    margin: -5px;
+    padding-bottom: 11%;
+}
+
+.categories-image img{
+    width:100%;
+}
+
+/*-------------- End ----------------*/
+
+/*-------------------------------
+About us page css
+--------------------------------*/
+
+.aboutus-heading{
+    font-family: JosefinSansSemiBold;
+    color:#212121;
+    font-size: 25px;
+    text-align: center;
+}
+
+.aboutus-subheading{
+    font-family: JosefinSansSemiBold;
+    color:#212121;
+    font-size: 22px;
+}
+
+.aboutus-txt-content{
+    font-family: JosefinSans;
+    color:#212121;
+    font-size: 20px;
+}
+/*-------------- End ----------------*/
+
+
+/*------------------------------
+Privacy policy
+-------------------------------*/
+.privacy-heading{
+    font-family: JosefinSansSemiBold;
+    font-size: 25px;
+    color:#000;
+    background-color: #dbdbdb;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+
+.bottomborder-gery{
+    border-bottom: 5px solid #dbdbdb;
+}
+
+.privacy-blue-txt
+{
+    font-family: JosefinSans;
+    color:#63aed6;
+    font-size: 16px;
+}
+
+.privacy-txt{
+    font-family: JosefinSansSemiBold;
+    font-size: 17px;
+    color:#797979;
+}
+
+.subheader-box{
+    font-family: JosefinSansSemiBold;
+    font-size: 23px;
+}
+
+.blue-number-box{
+    background-color: #0198cd;
+    color: #fff;
+    width:50px;
+    float: left;
+    text-align: center;
+    padding: 5px;
+}
+
+.privacy-subheading{
+    color:#000;
+    background-color: #dbdbdb;
+    margin-left: 52px;
+    padding-left: 5px;
+    padding: 5px;
+}
+
+/*-----------------
+admin - header 
+ -----------------*/
+ 
+ .navbar-inverse {
+    background-color: #34495e!important;
+    border-color: #34495e !important;
+}
+
+.stylish-input-group .input-group-addon{
+    background: white !important; 
+}   
+.stylish-input-group .form-control{
+	border-right:0; 
+	box-shadow:0 0 0; 
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.admin-navbar-form{
+	margin-bottom:8px;
+	margin-top:8px;
+}
+
+.alldocactivity{
+margin-top:53px;
+}
+
+
+.brand-logo2{
+    font-family: RalewaySemiBold;
+    font-size: 22px;
+    color: #fff;
+    padding-top: 9px;
+	
+}
+.brand-logo2 a{
+    text-decoration: none !important;
+    color: #fff !important;
+}
+.brand-logo2 a:hover{
+    color: #fff !important;  
+}
+
+.logo-txt-adjs{
+	vertical-align: middle;
+}
+
+admin-rightnavbar-adjs{
+}
+

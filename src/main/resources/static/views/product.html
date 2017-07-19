@@ -1,0 +1,855 @@
+
+<!--Header Part -->
+<div ng-include="'views/header.html'"></div>
+
+<!--Product Page  Part-->
+
+<div class="productpage-background">
+
+    <div class="container-fluid" id="product-container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-1 col-lg-1" id="filter-box">
+                <div class="dropdown">
+                    <button type="button" class="btn btn-default btn-gery" aria-label="Left Align" ng-click="open = !open">
+                        <span class="glyphicon glyphicon-filter" aria-hidden="true"></span>
+                    </button>
+                    <div class="dropdown-menu dropdown-size filetr-collapsable" ng-show="open"> 
+                        <div class="filter-box">
+                            <div>
+                                <div class="filter-headername" ng-click="hide = !hide" >
+                                    <span class="filter-headername-txt">Category</span> 
+                                    <span ng-show="!hide" class="glyphicon glyphicon-menu-up pull-right arrow-adjs" aria-hidden="true"></span>
+                                    <span ng-show="hide" class="glyphicon glyphicon-menu-down pull-right arrow-adjs" aria-hidden="true"></span>
+                                </div>
+                                <div ng-class="{ hideMe: hide }" class="filter-group-items ">
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Active Pharmaceutical Ingradients (API)  
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Fine Chemical
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Intermediats Exceptien
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Pellets
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Plant Machinary
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Lab Equipments
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Regulatory
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Finished Formulation
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Packaging
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Service
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Herbals
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Wholesale Dealers
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Veternary
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Brand
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="filter-headername" ng-click="hide1 = !hide1" >
+                                    <span class="filter-headername-txt">Suppilers</span> 
+                                    <span ng-show="!hide1" class="glyphicon glyphicon-menu-up pull-right arrow-adjs" aria-hidden="true"></span>
+                                    <span ng-show="hide1" class="glyphicon glyphicon-menu-down pull-right arrow-adjs" aria-hidden="true"></span>
+                                </div>
+                                <div ng-class="{ hideMe: hide1 }" class="filter-group-items ">
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 1 
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 2
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 3
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 4
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 5
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 6
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 7
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 8
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 9
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 10
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 11
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 12
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 13
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Suppiler 14
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="filter-headername" ng-click="hide2 = !hide2" >
+                                    <span class="filter-headername-txt">Products</span> 
+                                    <span ng-show="!hide2" class="glyphicon glyphicon-menu-up pull-right arrow-adjs" aria-hidden="true"></span>
+                                    <span ng-show="hide2" class="glyphicon glyphicon-menu-down pull-right arrow-adjs" aria-hidden="true"></span>
+                                </div>
+                                <div ng-class="{ hideMe: hide2 }" class="filter-group-items ">
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 1 
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 2
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 3
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 4
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 5
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 6
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 7
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 8
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 9
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 10
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 11
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 12
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 13
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                    <div class="filter-innerlist-block">
+                                        <div class="checkbox">
+                                            <span class="lable">
+                                                Products 14
+                                            </span>
+                                            <input type="checkbox">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-11 col-lg-11 product-page-items-background">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- duplicate product -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- duplicate product -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- duplicate product -->
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-1.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-5.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 p-product-item-box">
+                        <div class="row">
+                            <div class="col-xs-4 col-sm-3 col-md-3 col-lg-3">
+                                <div class="p-product-image">
+                                    <img src="image/products/product-6.png" alt="">
+                                </div>
+                            </div>
+                            <div class="col-xs-8 col-sm-9 col-md-9 col-lg-9">
+                                <div class="p-product-txt">
+                                    <div class="p-product-txt-content">
+                                        <span class="p-product-name">Product Name</span><br/> 
+                                        <span class="p-product-categorty">Category - Active Pharmaceutica Ingredients API</span><br/> 
+
+                                    </div>
+                                    <button type="button" class="btn btn-primary p-product-sendEnq-btn">SEND ENQUIRY</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- footer Part -->
+<div ng-include="'views/footer.html'"></div>
